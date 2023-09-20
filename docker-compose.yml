@@ -1,0 +1,15 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+  train-model:
+    build: .
+    command: python train_model.py
+    volumes:
+      - .:/app
+    environment:
+      PYTHONPATH: ./challenge

@@ -1,0 +1,26 @@
+# Byte-compiled / optimized / DLL files
+.pytest_cache/
+__pycache__/
+.ipynb_checkpoints/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+
+.vscode/
+
+#coverage
+.coverage
+reports/
+
+
+#model
+*.joblib
